@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas no <HTML></HTML></title>
+</head>
+<body>
+    <!-- tag de thead define o cabeçalho da tabela -->
+    <!-- tag tr cria linhas-->
+    <!-- tag th colunas -->
+    <!-- tag tbody e o corpo da tabela -->
+    <!-- tag rowspan mescla linhas na tabela -->
+    <!-- tag colspan mescla colunas -->
+
+    <main>
+        <h1>Tabelas na HTML</h1>
+
+        <section id="Clientes">
+            <h2>Tabela de Clientes</h2>
+
+            <table border="1">
+                <thead>
+                        <tr>
+                            <th>CodCliente</th>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                        </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1234</td>
+                        <td>Ana</td>
+                        <td>ana@gmail.com</td>  
+                    </tr>
+                    <tr>
+                        <td>1256</td>
+                        <td>Maria</td>
+                        <td>maria@gmail.com</td>
+                    <tr>
+                     
+                    <tr>
+                        <td>1278</td>
+                        <td>Clara</td>
+                        <td>clara@gmail.com</td>
+                    </tr>    
+                </tbody>
+            </table>
+        </section>
+       
+
+        <section id="finance">
+           <h2> Tabelas de Controle Finaceiro</h2>
+
+           <table border="2">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Tipo</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="2">15/06/2022</td>
+                    <td colspan="2">Despeça</td>
+                    <!-- <td>Almoço</td> -->
+                    <td><R1>35,00</R1></td>
+                </tr>
+
+                <tr>
+                    <td>Receitas</td>
+                    <td>Salário</td>
+                    <td><R1>3.768</R1></td>
+                </tr>
+            </tbody>
+
+           </table>
+        </section>
+
+    </main>
+</body>
+</html>
