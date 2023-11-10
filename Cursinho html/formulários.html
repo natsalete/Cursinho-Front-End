@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+</head>
+    <!-- tag input caixinha de texto  -->
+    <!-- tag label descrição da caixinha de texto -->
+    <!-- tag placeholder sugestão que aparece dentro da caixinha de texto -->
+    <!-- tag value define o valor que estará dentro do item -->
+    <!-- tag password ocuta valores -->
+    <!-- tag file permite escolher arquivo -->
+    <!-- tag range cria uma barrinha de selecionar -->
+    <!-- tag checkbox caixinha de selecionar, permite selecionar mais de uma caixinha  com o atributo checker a caixinha já vem marcada-->
+    <!-- tag radio bolinha de selecionar que não permite mais de uma seleção -->
+    <!-- tag reset limpa os dados -->
+    <!-- tag textarea caixa de texto -->
+    <!-- tag select linha que possiblita selecionar varias opções e disabled selected desabilita uma opção  -->
+<body>
+    <main>
+        
+        <h1>Formulários</h1> 
+        <hr>
+        <br>
+
+        <form>
+            <div>
+                <label for="texto">Input de texto:</label>
+                <input type="text" id="texto" placeholder="Informr seu nome...">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="valor">Input de valor</label>
+                <input type="text" id="valor" value="R$">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            
+            <br>
+            
+            <div>
+                <label for="data">Data de Nascimento:</label>
+                <input type="date" id="data" name="data">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="hora">Horário:</label>
+                <input type="time" id="hora" name="hora">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="numero">Idade em anos:</label>
+                <input type="number" id="numero" name="numero">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="arquivo">Adicionar Arquivo:</label>
+                <input type="file" id="arquivo" name="arquivo">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="URL">Adicione URL:</label>
+                <input type="url" id="URL" name="URL">
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="barriha">Selecione:</label>
+                <input type="range" id="barrinha" name="barrinha" value="100" max="200" min="100">
+            </div>
+             
+            <br>
+
+            <div>
+                <label for="cor">Escolha uma cor:</label>
+                <input type="color" id="cor" name="cor">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="caixinha">Selecione:</label>
+                <input type="checkbox" id="caixinha" name="caixinha" checked>
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="bolinha">Selecione:</label>
+                <input type="radio" id="bolinha" name="bolinha">
+            </div>
+            
+            <br>
+
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+
+            <br> <br>
+
+            <div>
+                <select name="select" id="selecionar">
+                    <option value="" disabled selected>Selecione uma das opções...</option>
+                    <option value="carro">Carro</option>
+                    <option value="moto">Moto</option>
+                    <option value="bicicleta">Bicicleta</option>
+                    <option value="caminhao">Caminhão</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="reset">Limpar:</label>
+                <input type="reset" id="reset" name="reset" value="Limpar">
+            </div>
+
+            <br>
+
+            <div>
+                <!-- <label for="reset">Limpar:</label> -->
+                <input type="submit" id="submit" name="submit" value="Enviar">
+            </div>
+            
+            
+
+        </form>
+    </main>
+</body>
+</html>
