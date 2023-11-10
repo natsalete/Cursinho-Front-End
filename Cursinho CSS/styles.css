@@ -1,6 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* margin  e padding permite retiar a margem da imagem*/
+/* font-style permite escolher o estilo da letra*/
+/* text-decoration permite colocar diversos efeitos no texto como riscar etc */
+/* text-transform: uppercase; permite deixar o texto em caixa auto ou não */
+/*  text-align: center ou right ou justify; cengtraliza o texto */
+
 h1  {
-    color: blue;
-    background-color: aqua;
+    color: rgb(8, 8, 8);
     font-size: 96px;
-    font-weight: 100;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-align: center;
+}
+/* p {front - size : aumenta o tamanho da letra do texto */
+    /* text-indent: 20px; recuo  */
+p{
+   font-size: 18px; 
+   text-align: justify;
+   text-indent: 20px;
+}
+
+/* cover cocloca a imagem como capa mas dependendo da largura ou altura corta a imagem*/
+/* conatim coloca a imagem como capa mas repete a imagem */
+/* ackground-repeat permite que a imagem não repita */
+/* background-position: center; coloca imagem no centro ; background-position: cover; deixa a imagem no canto esquendo */
+/* background-attachment: fixed; permite que o texto movimenta por cima da imagem */
+.bg{
+    height: 500px;
+    width: 100%;
+    background-color: rebeccapurple;
+    background-image: url('https://images.unsplash.com/photo-1698398755662-3a634390dec0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5NjV8fHxlbnwwfHx8fHw%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
 }
