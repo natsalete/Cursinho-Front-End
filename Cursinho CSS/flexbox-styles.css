@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Arial';
+    font-size: 1.8rem;
+}
+
+main {
+    /* padding: 7rem 0; */
+}
+
+h1  {
+    color: blueviolet; 
+    font-weight: 900; 
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 4.6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Roboto', arial, cursive;    
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+p{
+    font-size: 1.8rem;
+    text-align: justify;
+}
+/* flex-wrap: wrap; faz quebra de linha */
+/*  flex-direction: column; coloca os box em coluna em row fica em linha */
+/* gap faz espaçãmento entre intens */
+
+.boxes {
+    /* height: calc(100vh - (7 * 2 rem)); */
+    height: calc(100vh);
+    position: relative;
+    /* padding: 0 4rem; */
+
+    /* justify-content: faz orientação de esquerda direita */
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* flex-flow faz a mesma coisa que os dois separados */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    align-content: center;
+    gap: 2rem 5rem;
+}
+/* flex-basis: ordena o quantidade de lementos na mesma linha */
+/* flex aumenta o tamanha do elemento de acordo com o tamanho da página */
+
+.box {
+    min-height: 10rem;
+    min-width: 20rem;
+    padding: 1.5rem;
+    border: 10px solid red;
+    border-radius: 0.4rem;
+    background-color: blue;
+    color: #fff;
+    font-size: 4rem;
+    display: inline-block;
+    order: 10;
+    /* flex-basis: 30%; */
+    flex: 1;
+}
+/* order  se negativa o box vai para o inicio, se positiva pro final,se 0 fica na ordem certa */
+
+.box:nth-child(1){
+    order: 1;
+}
+.box:nth-child(2){
+    order: 2;
+}
+.box:nth-child(7){
+    order: 3;
+}
