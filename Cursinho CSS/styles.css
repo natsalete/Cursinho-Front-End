@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 /* margin  e padding permite retiar a margem da imagem*/
 /* font-style permite escolher o estilo da letra*/
@@ -15,33 +16,50 @@
 
 body{
     font-family: 'times new roman';
+    font-size: 1.8rem;
+}
+
+table, td, th{
+    border: 1px solid black;
+}
+
+table tr:first-child {
+    background-color: steelblue;
+    color: #fff;
+}
+
+table tr:nth-child(2n + 3){
+    background-color: #aaa;
+}
+
+table{
+    font-size: 2.4rem;
+    border-collapse: separate;
 }
 
 h1  {
     color: rgb(8, 8, 8);
     /* font-size: 96px;*/
-    font-size: 9.6rem; 
+    font-size: 4.6rem; 
     font-weight: 900; 
     font-style: italic;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-transform: capitalize;
     text-align: center;
     
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family:'roboto', arial, sans-serif;    
+    font-family:'Roboto', arial, sans-serif;    
 }
 
 h2{
-    font-size: 3.2rem; 
+    font-size: 2.4rem; 
 }
 .novo-em {
-    font-size: 85%;
+    font-size: 300%;
 }
-.novo-em h2{
-    font-size: 3.2em;
-}
+
 /* p {front - size : aumenta o tamanho da letra do texto */
     /* text-indent: 20px; recuo  */
 p{
@@ -58,19 +76,56 @@ a:visited{
     color: aquamarine;
 }
 
+a:hover{
+    color:blue
+}
+
 /* cover cocloca a imagem como capa mas dependendo da largura ou altura corta a imagem*/
 /* conatim coloca a imagem como capa mas repete a imagem */
 /* ackground-repeat permite que a imagem não repita */
 /* background-position: center; coloca imagem no centro ; background-position: cover; deixa a imagem no canto esquendo */
 /* background-attachment: fixed; permite que o texto movimenta por cima da imagem */
 .bg{
-    height: 500px;
-    width: 100%;
+    height: 20vh;
+    width: 100vw;
     background-color: rebeccapurple;
     background-image: url('https://images.unsplash.com/photo-1698398755662-3a634390dec0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5NjV8fHxlbnwwfHx8fHw%3D');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 
+}
+
+/* list - style escolhe o tipo de pontuar a lista com numero, bolinhas, quadrado, etc. */
+ul, ol{
+    padding-left: 3.4rem;
+}
+ul{
+    list-style: circle;
+}
+ol{
+    list-style:upper-roman ;
+}
+
+/* margin coloca de recuo na imagem */
+/* padding cresce a imagem por fora e faz marge dos elementos dentro do box, mas se adicionar  box-sizing: border-box; no inicio o padding não cresce a imagem */
+/*  border-radius aredonda a borda */
+/* display ajuda a posicionar os elementos */
+.box {
+    height: 10rem;
+    width: 20rem;
+    margin: 3.0rem;
+    padding: 3.0rem;
+    background-color: blue;
+    color: #fff;
+    border: 4px solid red;
+    display: inline-block;
+    border-radius: 0.4rem;
+}
+
+img{
+    height:11.0rem ;
+    width: 20rem;
+    object-fit: cover;
 }
