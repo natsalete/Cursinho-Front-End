@@ -7,22 +7,55 @@
 /* text-decoration permite colocar diversos efeitos no texto como riscar etc */
 /* text-transform: uppercase; permite deixar o texto em caixa auto ou não */
 /*  text-align: center ou right ou justify; cengtraliza o texto */
+/* font-family fonte do texto */
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'times new roman';
+}
 
 h1  {
     color: rgb(8, 8, 8);
-    font-size: 96px;
-    font-weight: 900;
+    /* font-size: 96px;*/
+    font-size: 9.6rem; 
+    font-weight: 900; 
     font-style: italic;
     text-decoration: underline;
     text-transform: capitalize;
     text-align: center;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'roboto', arial, sans-serif;    
+}
+
+h2{
+    font-size: 3.2rem; 
+}
+.novo-em {
+    font-size: 85%;
+}
+.novo-em h2{
+    font-size: 3.2em;
 }
 /* p {front - size : aumenta o tamanho da letra do texto */
     /* text-indent: 20px; recuo  */
 p{
-   font-size: 18px; 
+   font-size: 1.8rem; 
    text-align: justify;
    text-indent: 20px;
+}
+a{
+    font-size: 2.4rem;
+    color: red;
+}
+
+a:visited{
+    color: aquamarine;
 }
 
 /* cover cocloca a imagem como capa mas dependendo da largura ou altura corta a imagem*/
