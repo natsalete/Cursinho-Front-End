@@ -31,6 +31,11 @@ console.clear()
 
  // OR => ||
 
-    idade
+    idade = 40;
+    const  votoFacultativo = idade < 18 || idade >= 70
 
  // NOT => !
+
+ const estouGostandoDoCurso = false;
+
+ console.log(!estouGostandoDoCurso)
